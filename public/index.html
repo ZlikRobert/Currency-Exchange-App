@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange App</title>
+    <!-- Link to the CSS file for styling the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main background container -->
+    <div class="background-container">
+        <!-- Images displayed on the left and right sides of the container -->
+        <img id="leftImage" class="side-image" src="images/BEFORE.webp" alt="Before Image">
+        <div class="container">
+            <h1>Currency Exchange App</h1>
+            <div>
+                <!-- Section for entering the amount to convert -->
+                <div>
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" placeholder="Enter amount">
+                </div>
+                <!-- Section for selecting the base currency -->
+                <div>
+                    <label for="fromCurrency">From:</label>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select" id="fromCurrencySelect">
+                            <div class="custom-select-trigger">
+                                <img id="fromCurrencyFlag" class="flag-icon" src="" alt="Flag" style="display: none;">
+                                <span id="fromCurrencyText">Select currency</span>
+                            </div>
+                            <!-- Input field for searching currencies -->
+                            <input type="text" class="search-input" placeholder="Search currency...">
+                            <!-- Options for selecting currencies -->
+                            <div class="custom-options" id="fromCurrencyOptions"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section for selecting the target currency -->
+                <div>
+                    <label for="toCurrency">To:</label>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select" id="toCurrencySelect">
+                            <div class="custom-select-trigger">
+                                <img id="toCurrencyFlag" class="flag-icon" src="" alt="Flag" style="display: none;">
+                                <span id="toCurrencyText">Select currency</span>
+                            </div>
+                            <!-- Input field for searching currencies -->
+                            <input type="text" class="search-input" placeholder="Search currency...">
+                            <!-- Options for selecting currencies -->
+                            <div class="custom-options" id="toCurrencyOptions"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button for converting currencies -->
+                <button id="convertButton">Convert</button>
+                <!-- Area for displaying the conversion result -->
+                <div id="result"></div>
+            </div>
+        </div>
+        <!-- Images displayed on the left and right sides of the container -->
+        <img id="rightImage" class="side-image" src="images/BEFORE.webp" alt="Before Image">
+    </div>
+    <!-- Link to the JavaScript file containing the logic for the page -->
+    <script src="script.js"></script>
+</body>
+</html>
